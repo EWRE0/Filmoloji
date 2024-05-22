@@ -1,0 +1,130 @@
+/* Genel stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000000, #012f4e ) ;
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Kullanıcı bilgi kutusu */
+.user-info {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 12px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: default;
+    transition: transform 0.3s ease;
+}
+
+.user-info:hover {
+    transform: translateY(-3px);
+}
+
+/* Film bilgi kutusu */
+.film-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b2b2b; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.film-info img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease; 
+    border-radius: 12px;
+}
+
+.film-info img:hover {
+    transform: scale(1.1); 
+}
+
+.film-details {
+    max-width: 600px;
+    text-align: left; 
+}
+
+.film-details h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px; 
+    color: #ff6f61; 
+}
+
+.film-details p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #ddd; 
+}
+
+/* Seçim formu */
+.selection-form {
+    padding: 20px;
+    background-color: #2b2b2b; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.selection-form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px; 
+    color: #ff6f61; 
+}
+
+.selection-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.selection-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555; 
+    border-radius: 5px;
+    background-color: #333; 
+    color: #fff; 
+    margin-bottom: 20px;
+    font-size: 16px; 
+}
+
+.selection-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.selection-form button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-3px);
+}
